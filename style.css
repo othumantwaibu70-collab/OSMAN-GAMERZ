@@ -1,36 +1,106 @@
-body {
-  background: #0b1120;
+* {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
+body {
+  background: #0b1120;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Header */
 .header {
   background: #000;
   padding: 15px 20px;
 }
 
 .header h1 {
-  margin: 0;
   font-size: 22px;
   font-weight: bold;
 }
 
-.header .white { color: #fff; }
-.header .blue { color: #00bfff; }
-.header .katoro { color: #00bfff; font-size: 16px; font-weight: normal; }
+.white { color: #fff; }
+.blue { color: #00bfff; }
+.gray { color: #94a3b8; font-size: 16px; font-weight: normal; }
 
+/* Game Card */
 .game-card {
-  background: #0f172a;
-  padding: 0 0 20px 0;
+  background: #1e293b;
   margin-bottom: 20px;
+}
+
+.game-img {
+  width: 100%;
+  display: block;
+}
+
+.game-info {
+  padding: 20px;
+}
+
+.game-info h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Specs */
+.specs p {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #e2e8f0;
+}
+
+.specs strong {
   color: #fff;
 }
 
-.game-img { width: 100%; height: auto; display: block; }
-.game-title { color: #fff; padding: 15px 20px 5px 20px; margin: 0; font-size: 20px; }
-.game-specs { padding: 0 20px; color: #e2e8f0; line-height: 1.6; }
-.game-features { list-style: disc; padding-left: 40px; margin: 10px 0 20px 0; color: #e2e8f0; line-height: 1.8; }
+/* Features */
+.features {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 15px 0 20px 0;
+  color: #e2e8f0;
+  line-height: 1.8;
+}
 
+/* Payment Box */
 .payment-box {
-  background: #f1f5
+  background: #f8fafc;
+  color: #0f172a;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #3b82f6;
+}
+
+.payment-box h3 {
+  color: #2563eb;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.payment-box p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.payment-box .note {
+  color: #64748b;
+  font-size: 13px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.payment-box a {
+  display: block;
+  color: #2563eb;
+  text-decoration: underline;
+  font-size: 14px;
+  margin-top: 8px;
+}
