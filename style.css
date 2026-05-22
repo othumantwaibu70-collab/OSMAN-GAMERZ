@@ -104,3 +104,7 @@ body {
   font-size: 14px;
   margin-top: 8px;
 }
+.game-img {
+  width: 100%;
+  display: block;
+}
