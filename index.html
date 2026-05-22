@@ -172,8 +172,39 @@
 <p class="copyright">© 2026 OSMAN GAMERZ</p>
 <p class="copyright">Developed by <span style="color:#00ff88;">meta AI</span> (IG: meta_AI)</p>
 </footer>  
- 
-  </body>     
+ <!-- Get Started Popup -->
+<div id="getStartedPopup" class="popup-overlay">
+  <div class="popup-box">
+    <span class="close-btn">&times;</span>
+    <h3>Get Started</h3>
+    <p>Ingiza email yako upate updates za michezo mpya na bei nafuu</p>
+    <form id="emailForm">
+      <input type="email" placeholder="Weka email yako" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+ <script>
+window.onload = function() {
+  // Onyesha popup baada ya sekunde 2
+  setTimeout(() => {
+    document.getElementById('getStartedPopup').style.display = 'flex';
+  }, 2000);
+
+  // Funga popup ukibofya X
+  document.querySelector('.close-btn').onclick = function() {
+    document.getElementById('getStartedPopup').style.display = 'none';
+  }
+
+  // Fanya kitu uki-submit email
+  document.getElementById('emailForm').onsubmit = function(e) {
+    e.preventDefault();
+    alert('Asante! Tumeipokea email yako.');
+    document.getElementById('getStartedPopup').style.display = 'none';
+  }
+}
+ </script> 
+</body>     
   </html>     
   
 
