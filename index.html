@@ -115,100 +115,163 @@
     <h2>MICHEZO MPYA</h2>
     <div class="games-grid">
       
-      <section class="games-section">
-  <h2>Michezo Maarufu</h2>
-  <div class="games-grid">
+      <div class="app-container">
+  <h2 class="title">MICHEZO MPYA</h2>
+  <h3 class="subtitle">Michezo Maarufu</h3>
 
-    
-  <section class="games-grid">
-  <a href="#" class="game-card">
-    <img src="images/gta-sa.png" alt="GTA San Andreas" loading="lazy">
-    <h3>GTA San Andreas</h3>
-    <span class="download-btn">Pakua</span>
-  </a>
+  <!-- 1. GTA San Andreas -->
+  <div class="game-card">
+    <div class="game-header">
+      <img src="images/gta-sa.png" alt="GTA San Andreas" class="game-icon">
+      <span>GTA San<br>Andreas</span>
+    </div>
+    <h4>Grand Theft Auto: San Andreas</h4>
+    <p class="meta">Platform: Android, iOS</p>
+    <p class="meta">Size: 2.6GB</p>
+    <p class="desc">Classic open world. CJ, Los Santos, na missions nyingi za kutwa. Paid game.</p>
+    <a href="#" class="download-btn">DOWNLOAD</a>
+  </div>
 
-  <a href="#" class="game-card">
-    <img src="images/gta-vice-city.png" alt="GTA Vice City" loading="lazy">
-    <h3>GTA Vice City</h3>
-    <span class="download-btn">Pakua</span>
-  </a>
+  <!-- 2. GTA Vice City -->
+  <div class="game-card">
+    <div class="game-header">
+      <img src="images/gta-vice-city.png" alt="GTA Vice City" class="game-icon">
+      <span>GTA Vice<br>City</span>
+    </div>
+    <h4>Grand Theft Auto: Vice City</h4>
+    <p class="meta">Platform: Android, iOS</p>
+    <p class="meta">Size: 1.8GB</p>
+    <p class="desc">80s Miami vibes. Tommy Vercetti, magari, na story kali. Paid game.</p>
+    <a href="#" class="download-btn">DOWNLOAD</a>
+  </div>
 
-  <a href="#" class="game-card">
-    <img src="images/where-winds-meet.png" alt="Where Winds Meet" loading="lazy">
-    <h3>Where Winds Meet</h3>
-    <span class="download-btn">Pakua</span>
-  </a>
+  <!-- 3. Where Winds Meet -->
+  <div class="game-card">
+    <div class="game-header">
+      <img src="images/where-winds-meet.png" alt="Where Winds Meet" class="game-icon">
+      <span>Where Winds<br>Meet</span>
+    </div>
+    <h4>Where Winds Meet</h4>
+    <p class="meta">Platform: Android, iOS</p>
+    <p class="meta">Size: 3.2GB</p>
+    <p class="desc">Open world RPG ya China ya kale. Kupigana, kuchunguza, na story nzito.</p>
+    <a href="#" class="download-btn">DOWNLOAD</a>
+  </div>
 
-  <a href="#" class="game-card">
-    <img src="images/mortal-kombat.png" alt="Mortal Kombat Mobile" loading="lazy">
-    <h3>Mortal Kombat Mobile</h3>
-    <span class="download-btn">Pakua</span>
-  </a>
+  <!-- 4. Mortal Kombat Mobile -->
+  <div class="game-card">
+    <div class="game-header">
+      <img src="images/mortal-kombat.png" alt="Mortal Kombat Mobile" class="game-icon">
+      <span>Mortal Kombat<br>Mobile</span>
+    </div>
+    <h4>Mortal Kombat Mobile</h4>
+    <p class="meta">Platform: Android, iOS</p>
+    <p class="meta">Size: 1.5GB</p>
+    <p class="desc">Fight Scorpion, Sub-Zero, na wengine. Fatalities na 3v3 battles. Free to play.</p>
+    <a href="#" class="download-btn">DOWNLOAD</a>
+  </div>
 
-  <a href="#" class="game-card">
-    <img src="images/tomb-raider.png" alt="Tomb Raider Reloaded" loading="lazy">
-    <h3>Tomb Raider Reloaded</h3>
-    <span class="download-btn">Pakua</span>
-  </a>
-</section>
+  <!-- 5. Tomb Raider Reloaded -->
+  <div class="game-card">
+    <div class="game-header">
+      <img src="images/tomb-raider.png" alt="Tomb Raider Reloaded" class="game-icon">
+      <span>Tomb Raider<br>Reloaded</span>
+    </div>
+    <h4>Tomb Raider Reloaded</h4>
+    <p class="meta">Platform: Android, iOS</p>
+    <p class="meta">Size: 400MB</p>
+    <p class="desc">Adventure na Lara Croft. Dungeons, puzzles, na action nyingi. Free to play.</p>
+    <a href="#" class="download-btn">DOWNLOAD</a>
+  </div>
+
+</div>
 
 <style>
-.games-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+body {
+  background: #000;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  margin: 0;
   padding: 15px;
 }
 
+.app-container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.title {
+  color: #00ff66;
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 0 0 8px #00ff66;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #00ff66;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 0 6px #00ff66;
+  margin-bottom: 20px;
+}
+
 .game-card {
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  background: rgba(255,255,255,0.05);
-  padding: 12px;
-  border-radius: 14px;
-  transition: transform 0.15s ease;
+  border: 1px solid #00ff66;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #0a0a0a;
 }
 
-.game-card:active {
-  transform: scale(0.96);
-  background: rgba(255,255,255,0.1);
-}
-
-.game-card img {
-  width: 100%;
-  height: auto;
-  background: transparent;
-  border-radius: 10px;
-}
-
-.game-card h3 {
-  margin: 8px 0 4px;
+.game-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
   font-size: 14px;
-  font-weight: 600;
-}
-
-.download-btn {
-  display: inline-block;
-  margin-top: 6px;
-  padding: 6px 10px;
-  background: #00c853;
-  color: #fff;
-  border-radius: 6px;
-  font-size: 13px;
   font-weight: 500;
 }
 
-/* Kwa skrini kubwa - 4 columns */
-@media (min-width: 768px) {
-  .games-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .game-card h3 {
-    font-size: 16px;
-  }
+.game-icon {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  background: transparent;
+}
+
+h4 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.meta {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 3px 0;
+}
+
+.desc {
+  font-size: 14px;
+  color: #ccc;
+  margin: 8px 0 15px;
+  line-height: 1.4;
+}
+
+.download-btn {
+  display: block;
+  text-align: center;
+  background: #00ff66;
+  color: #000;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.download-btn:active {
+  transform: scale(0.98);
+  background: #00e65c;
 }
   </style>
