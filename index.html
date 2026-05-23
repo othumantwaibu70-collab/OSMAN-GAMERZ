@@ -119,103 +119,96 @@
   <h2>Michezo Maarufu</h2>
   <div class="games-grid">
 
-    <!-- Tomb Raider Reloaded -->
-    <div class="game-card">
-      <img src="tomb-raider.jpg" alt="Tomb Raider Reloaded">
-      <h3>Tomb Raider Reloaded</h3>
-      <p><strong>Platform:</strong> Android, iOS</p>
-      <p><strong>Size:</strong> 400MB</p>
-      <p>Adventure na Lara Croft. Dungeons, puzzles, na action nyingi. Free to play.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.squareenix.tombraiderreloadediap" target="_blank" class="btn">DOWNLOAD</a>
-    </div>
+    
+  <section class="games-grid">
+  <a href="#" class="game-card">
+    <img src="images/gta-sa.png" alt="GTA San Andreas" loading="lazy">
+    <h3>GTA San Andreas</h3>
+    <span class="download-btn">Pakua</span>
+  </a>
 
-    <!-- GTA San Andreas -->
-    <div class="game-card">
-      <img src="gta-sa.jpg" alt="GTA San Andreas">
-      <h3>Grand Theft Auto: San Andreas</h3>
-      <p><strong>Platform:</strong> Android, iOS</p>
-      <p><strong>Size:</strong> 2.6GB</p>
-      <p>Classic open world. CJ, Los Santos, na missions nyingi za kutwa. Paid game.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.rockstargames.gtasa" target="_blank" class="btn">DOWNLOAD</a>
-    </div>
+  <a href="#" class="game-card">
+    <img src="images/gta-vice-city.png" alt="GTA Vice City" loading="lazy">
+    <h3>GTA Vice City</h3>
+    <span class="download-btn">Pakua</span>
+  </a>
 
-    <!-- GTA Vice City -->
-    <div class="game-card">
-      <img src="gta-vice-city.jpg" alt="GTA Vice City">
-      <h3>Grand Theft Auto: Vice City</h3>
-      <p><strong>Platform:</strong> Android, iOS</p>
-      <p><strong>Size:</strong> 1.6GB</p>
-      <p>Miaka ya 80s, Miami style. Tommy Vercetti na story kali. Paid game.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.rockstargames.gtavc" target="_blank" class="btn">DOWNLOAD</a>
-    </div>
+  <a href="#" class="game-card">
+    <img src="images/where-winds-meet.png" alt="Where Winds Meet" loading="lazy">
+    <h3>Where Winds Meet</h3>
+    <span class="download-btn">Pakua</span>
+  </a>
 
-    <!-- Where Winds Meet -->
-    <div class="game-card">
-      <img src="where-winds-meet.jpg" alt="Where Winds Meet">
-      <h3>Where Winds Meet</h3>
-      <p><strong>Platform:</strong> Android, iOS</p>
-      <p><strong>Size:</strong> 3GB</p>
-      <p>Open world wuxia RPG. Martial arts, exploration, na picha nzuri sana.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.netease.m77" target="_blank" class="btn">DOWNLOAD</a>
-    </div>
+  <a href="#" class="game-card">
+    <img src="images/mortal-kombat.png" alt="Mortal Kombat Mobile" loading="lazy">
+    <h3>Mortal Kombat Mobile</h3>
+    <span class="download-btn">Pakua</span>
+  </a>
 
-    <!-- Mortal Kombat Mobile -->
-    <div class="game-card">
-      <img src="mortal-kombat.jpg" alt="Mortal Kombat Mobile">
-      <h3>Mortal Kombat Mobile</h3>
-      <p><strong>Platform:</strong> Android, iOS</p>
-      <p><strong>Size:</strong> 2GB</p>
-      <p>Pigana na Scorpion, Sub-Zero, na wengine. Fatalities na online battles. Free.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.wb.mortalkombat" target="_blank" class="btn">DOWNLOAD</a>
-    </div>
-
-  </div>
+  <a href="#" class="game-card">
+    <img src="images/tomb-raider.png" alt="Tomb Raider Reloaded" loading="lazy">
+    <h3>Tomb Raider Reloaded</h3>
+    <span class="download-btn">Pakua</span>
+  </a>
 </section>
 
 <style>
 .games-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-.game-card {
-  background: #1e1e1e;
-  border-radius: 12px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
   padding: 15px;
+}
+
+.game-card {
   text-align: center;
-  transition: 0.3s;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255,255,255,0.05);
+  padding: 12px;
+  border-radius: 14px;
+  transition: transform 0.15s ease;
 }
-.game-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+
+.game-card:active {
+  transform: scale(0.96);
+  background: rgba(255,255,255,0.1);
 }
+
 .game-card img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
+  height: auto;
+  background: transparent;
+  border-radius: 10px;
 }
+
 .game-card h3 {
-  margin: 10px 0 5px;
-  color: #fff;
-}
-.game-card p {
-  color: #bbb;
+  margin: 8px 0 4px;
   font-size: 14px;
-  margin: 5px 0;
+  font-weight: 600;
 }
-.btn {
+
+.download-btn {
   display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background: #ff4757;
-  color: white;
-  text-decoration: none;
+  margin-top: 6px;
+  padding: 6px 10px;
+  background: #00c853;
+  color: #fff;
   border-radius: 6px;
-  font-weight: bold;
+  font-size: 13px;
+  font-weight: 500;
 }
-.btn:hover {
-  background: #e84118;
+
+/* Kwa skrini kubwa - 4 columns */
+@media (min-width: 768px) {
+  .games-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .game-card h3 {
+    font-size: 16px;
+  }
 }
-</style>
+  </style>
